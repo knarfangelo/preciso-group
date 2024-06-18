@@ -1,0 +1,85 @@
+img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+swiper-container{
+    margin: 50px;
+    width: 80%;
+}
+swiper-slider{
+    margin: 40px;
+}
+main {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; /* Para ocultar cualquier posible desbordamiento */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 11, 59, 0.5); /* Color de fondo con transparencia */
+}
+
+h4 {
+    color: #ffff;
+    margin-top: 0; /* Elimina el margen superior predeterminado del h4 */
+    font-size: 24px; /* Tamaño de fuente del título */
+    font-weight: bold; /* Texto en negrita */
+}
+
+p {
+    margin-bottom: 0; /* Elimina el margen inferior predeterminado del párrafo */
+    font-size: 16px; /* Tamaño de fuente del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas del párrafo */
+    color: white;
+}
+button{
+    
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0px; 
+    color: white;
+    background-color: #b84900;
+  }
+
+button:hover{
+    color: #022454;
+    background-color: #ffff;
+  }
+  h5{
+    font-size: 20px;
+    color: #ffff;
+    margin: 10px;
+  }

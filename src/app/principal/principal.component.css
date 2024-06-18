@@ -1,0 +1,90 @@
+.container-principal {
+    width: 100vw; /* Use vw for viewport width to fill the entire viewport */
+    height: 100vh; /* Use vh for viewport height */
+    background-color: #141414;
+    overflow: hidden; /* Hide any overflowing content */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .titulo {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+  }
+  
+  .titulo img {
+    width: auto;
+    height: 80px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .imagenes {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .subpanel {
+    width: 33.33%; 
+    height: 100%; 
+    position: relative;
+  }
+  
+  video {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  .subpanel-texto{ 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(1, 18, 42, 0.5);
+  }
+  .subpanel-texto img{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .subpanel-texto button{
+    font-weight: bold;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    border: 0px;
+  }
+
+  .subpanel-texto button:hover{
+    color: white;
+    background-color: #022454;
+  }
+  @media (max-width: 800px) {
+     .imagenes {
+        flex-direction: column;
+    }
+    .subpanel-texto img{
+       width: 100px;
+    }
+    .subpanel{
+        width: 100%;
+    }
+}

@@ -1,0 +1,125 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+img{
+    width: 100%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    color: white;
+    background-color: #022454;
+}
+ul{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    height: 60px;
+}
+li{
+    display: flex;
+    align-items: center;
+    border-right: solid #022454 5px;
+}
+.servicios{
+    width: 10%;
+}
+.nosotros{
+    width: 10%;
+}
+.titulo{
+    width: 20%;
+}
+.titulo a{
+    width: 100%;
+    height: 100%;
+}
+.titulo a:hover{
+    background-color: white;
+}
+.titulo img{
+    width: auto;
+    height: 90%;
+}
+.buscar{
+    width: 40%;
+}
+.buscar input{
+    margin-left: 20px;
+    width: 90%;
+    height: 80%;
+    border-radius: 25px;
+    border: 1px solid #c2c2c2;
+}
+.buscar input::placeholder{
+    color: black;
+}
+
+.contacto{
+    width: 10%;
+}
+.banderaperu{
+    width: 5%;
+}
+
+.eeuubandera{
+    width: 5%;
+}
+
+.whatsapp{
+    width: 5%;
+}
+
+.imgperu{
+    width: 20px;
+}
+.imgeeuu{
+    width: 20px;
+}
+.imgwhatsapp{
+    width: 30px;
+}
+header {
+  position: relative; /* Posiciona el header de forma relativa */
+  width: 100%;
+  height: calc(100vh - 60px); /* Calcula la altura restando la del nav */
+}
+.fondo {
+    position: absolute; /* Posiciona la imagen de fondo de forma absoluta */
+    top: 0; /* Ubica la imagen en la parte superior */
+    left: 0; /* Ubica la imagen en la izquierda */
+    width: 100%; /* Ocupa el ancho completo del header */
+    height: 100%; /* Ocupa el alto completo del header */
+    object-fit: cover;
+}
+.transparencia{
+    position: absolute; /* Posiciona la imagen de fondo de forma absoluta */
+    top: 0; /* Ubica la imagen en la parte superior */
+    left: 0; /* Ubica la imagen en la izquierda */
+    width: 100%; /* Ocupa el ancho completo del header */
+    height: 100%; /* Ocupa el alto completo del header */
+    object-fit: cover;
+    background-color: rgba(1, 18, 42, 0.5);
+    z-index: 10;
+}
+header .titulo-2{
+    position: absolute;
+    width: 500px;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    z-index: 20;
+}
