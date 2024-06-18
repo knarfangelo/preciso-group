@@ -2,28 +2,33 @@
     <main>
         <div class="titulo"><img src="titulo.png" alt=""></div>
         <div class="imagenes">
-                <div class="subpanel">
-                    <video src="/videos/consultants.mp4" muted autoplay loop></video>
-                    <div class="subpanel-texto">
+            <div class="subpanel" (mouseenter)="startPreview(consultantsVideo)" (mouseleave)="stopPreview()">
+                <video #consultantsVideo muted autoplay loop>
+                    <source src="/videos/consultants.mp4" type="video/mp4">
+                </video>
+                <div class="subpanel-texto">
                     <img src="/principal/titulo-sinfondo.png" alt="">
                     <button routerLink="inicio">CONOCE MÁS</button>
-                    </div>
                 </div>
-                <div  class="subpanel">
-                    <video src="/videos/express.mp4" muted autoplay loop></video>
-                    <div class="subpanel-texto">
-                       <img src="/principal/titulo-sinfondo.png" alt="">
-                        <button routerLink="inicio">CONOCE MÁS</button> 
-                    </div>
-                    
+            </div>
+            <div class="subpanel" (mouseenter)="startPreview(expressVideo)" (mouseleave)="stopPreview()">
+                <video #expressVideo muted autoplay loop>
+                    <source src="/videos/express.mp4" type="video/mp4">
+                </video>
+                <div class="subpanel-texto">
+                    <img src="/principal/titulo-sinfondo.png" alt="">
+                    <button routerLink="inicio">CONOCE MÁS</button> 
                 </div>
-                <div  class="subpanel">
-                    <video src="/videos/industry.mp4" muted autoplay loop></video>
-                    <div class="subpanel-texto">
-                        <img src="/principal/titulo-sinfondo.png" alt=""> 
-                        <button routerLink="inicio">CONOCE MÁS</button>
-                    </div>
+            </div>
+            <div class="subpanel" (mouseenter)="startPreview(industryVideo)" (mouseleave)="stopPreview()">
+                <video #industryVideo muted autoplay loop>
+                    <source src="/videos/industry.mp4" type="video/mp4">
+                </video>
+                <div class="subpanel-texto">
+                    <img src="/principal/titulo-sinfondo.png" alt=""> 
+                    <button routerLink="inicio">CONOCE MÁS</button>
                 </div>
+            </div>
         </div>
     </main>
 </div>
