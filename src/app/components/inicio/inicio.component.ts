@@ -5,11 +5,12 @@ import { NosotrosComponent } from '../nosotros/nosotros.component';
 import { FooterComponent } from '../footer/footer.component';
 import { GaleriaComponent } from '../galeria/galeria.component';
 import { BlogComponent } from '../blog/blog.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent],
+  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent, RouterLink],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
