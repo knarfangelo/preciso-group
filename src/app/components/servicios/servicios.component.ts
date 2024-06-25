@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 register();
 @Component({
@@ -11,6 +11,11 @@ register();
 })
 export class ServiciosComponent {
   
-  
+
+  ngOnInit() {
+    if (window.innerWidth <= 800) {
+        
+    }
+  }
 
 }

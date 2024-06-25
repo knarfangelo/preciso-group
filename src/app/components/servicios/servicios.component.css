@@ -45,10 +45,9 @@ swiper-slide{
 }
 button{
     font-weight: bold;
-    position: absolute;
     height: 40px;
     width: 150px;
-    bottom: 3vh;
+    margin-top: 5vh;
     border: 0;
     color: #fff;
     background-color: #18437F;
@@ -58,4 +57,9 @@ button{
 button:hover{
     background-color: #AFD0FE;
     color: #18437F;
+}
+
+@media (max-width: 800px) {
+
+    
 }

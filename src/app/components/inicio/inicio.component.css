@@ -32,10 +32,15 @@ li{
 .banderaperu, .eeuubandera, .whatsapp{
     width: 4%;
 }
-.banderaperu a img, .eeuubandera a img {
-    width: 20px;
-}
 
+.banderaperu a img, .eeuubandera a img, .whatsapp a img {
+    width: 20px;
+    height: 15px;
+}
+.whatsapp a img{
+    width: 25px;
+    height: 25px;
+}
 input{
     width: 90%;
     height: 30px;
@@ -88,3 +93,47 @@ header .titulo-2 {
     margin: 20px;
     z-index: 20;
 }
+
+@media (max-width: 800px) {
+    ul{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+    }
+    .nosotros, .servicios,.titulo,.buscar,.contacto,.banderaperu,.eeuubandera{
+        width: 100%;
+    }
+    .titulo a img{
+        height: 100%;
+        object-fit: contain;
+    }
+    .titulo{
+        order: 0;
+    }
+    .nosotros{
+        order: 1;
+    }
+    .contacto{
+        order: 3;
+    }
+    .banderaperu{
+        order: 5;
+    }
+    .eeuubandera{
+        order: 6;
+    }
+    .servicios{
+        order: 2;
+    }
+    .whatsapp{
+        width: 100%;
+        order: 4;
+    }
+
+    .whatsapp a img{
+        height: 50%;
+        object-fit: contain;
+    }
+}
+
