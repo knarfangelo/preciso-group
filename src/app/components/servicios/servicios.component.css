@@ -29,14 +29,12 @@ p{
 }
 header{
     height: 90vh;
-    border: 1px solid red;
 }
 swiper-container{
     height: 100%;
 }
 swiper-slide{
     height: 100%;
-    border: 1px solid blue;
     box-sizing: border-box;
     padding: 1vw;
     position: relative;
@@ -44,7 +42,6 @@ swiper-slide{
 .slider-info{
     height: 100%;
     padding: 0 3vw;
-    border: 1px solid green;
 }
 button{
     font-weight: bold;
