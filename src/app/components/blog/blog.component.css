@@ -1,85 +1,67 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+p,h2,h1,h5{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h5{
+    padding: 30px 0;
+}
+
+h1{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
 img{
-    width: 200px;
-    height: 250px;
+    width: 100%;
+    height: 50vh;
     object-fit: cover;
 }
-.container{
+swiper-slide{
+    box-sizing: content-box;
+    padding: 0 1vw;
+}
+.background-image{
     width: 100%;
-    height: 100%;
-}
-swiper-container{
-    margin: 50px;
-    width: 80%;
-}
-swiper-slider{
-    margin: 40px;
-}
-main {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden; /* Para ocultar cualquier posible desbordamiento */
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    display: flex;
-}
-
-.background-image {
+    height: 100vh;
     position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #03214c9f;
+}
+.background-image img{
     width: 100%;
-    height: 100%;
-    z-index: -1; /* Coloca la imagen detrás del contenido */
+    height: 100vh;    
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
 }
 
-.background-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+swiper-container{
+    height: 90vh;
 }
 
-.contenido {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 11, 59, 0.5); /* Color de fondo con transparencia */
-}
-
-h4 {
-    color: #ffff;
-    margin-top: 0; /* Elimina el margen superior predeterminado del h4 */
-    font-size: 24px; /* Tamaño de fuente del título */
-    font-weight: bold; /* Texto en negrita */
-}
-
-p {
-    margin-bottom: 0; /* Elimina el margen inferior predeterminado del párrafo */
-    font-size: 16px; /* Tamaño de fuente del párrafo */
-    line-height: 1.5; /* Espaciado entre líneas del párrafo */
-    color: white;
-}
 button{
-    
     font-weight: bold;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    width: 80px;
-    height: 30px;
-    border-radius: 50px;
-    border: 0px; 
-    color: white;
-    background-color: #b84900;
-  }
+    height: 40px;
+    width: 150px;
+    bottom: 3vh;
+    border: 0;
+    color: #fff;
+    background-color: #18437F;
+    border-radius: 25px;
+}
 
 button:hover{
-    color: #022454;
-    background-color: #ffff;
-  }
-  h5{
-    font-size: 20px;
-    color: #ffff;
-    margin: 10px;
-  }
+    background-color: #AFD0FE;
+    color: #18437F;
+}
+
