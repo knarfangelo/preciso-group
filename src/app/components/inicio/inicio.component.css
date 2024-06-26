@@ -54,6 +54,7 @@ a{
     justify-content: center;
     color: black;
     text-decoration: none;
+    transition: 500ms;
 }
 a:hover{
     background-color: #18437F;
