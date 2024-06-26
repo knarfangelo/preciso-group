@@ -22,8 +22,10 @@ swiper-slide p{
     height: 9em;
 }
 h2{
-    height: 1.5em;
+    margin-top: 20px;
+    height: 2em;
     color: #3d7dd6;
+    text-transform: uppercase;
 }
 
 h4{
@@ -31,7 +33,7 @@ h4{
 }
 h4{
     padding-top: 7px;
-    font-variant: small-caps;
+    text-transform: uppercase;
 }
 .caja{
     width: 20%;

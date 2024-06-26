@@ -31,7 +31,7 @@ p{
 
 h2{
     color: #18437F;
-    font-variant: small-caps;
+    text-transform: uppercase;
     margin-bottom: 0;
     padding-bottom: 0;
 }

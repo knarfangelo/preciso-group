@@ -20,7 +20,7 @@ h2{
     display: flex;
     align-items: center;
     height: 10vh;
-    font-variant: small-caps;
+    text-transform: uppercase;
 }
 .titulo{
     padding-left: 40px;
