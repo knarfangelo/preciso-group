@@ -1,65 +1,62 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component} from '@angular/core';
-import { register } from 'swiper/element/bundle';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild, signal} from '@angular/core';
+import { SwiperContainer, register } from 'swiper/element/bundle';
 import { IServicio } from '../../models/IServicio';
 import { servicios } from '../../DataBase/serviciosDB/servicios';
 import { NgOptimizedImage } from '@angular/common';
+import { SwiperOptions } from 'swiper/types';
+import { EffectCube } from 'swiper/modules';
 register();
 @Component({
   selector: 'app-servicios',
   standalone: true,
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   imports: [],
-  template: `
-  <main>
-  <h2 class="titulo">NUESTROS SERVICIOS</h2>
-  <header>
-      <div class="servicio-principal">
-
-      <swiper-container>      
-        @for (servicio of servicios; track $index) {
-        <swiper-slide slides-per-view="1" autoplay="true" speed="1000" direction="vertical">
-              <img class="imagenprincipal" [srcset]="servicio.img">
-              <h2>{{servicio.title}}</h2>
-              <p>{{servicio.description}}</p>
-              <button (click)="siguienteServicio()">Siguiente Servicio</button> 
-          </swiper-slide> 
-        }
-        </swiper-container>
-      </div>
-      <swiper-container  slides-per-view="2" autoplay="true" speed="1000" direction="vertical">
-        @for (subServicio of servicios[index].subServicio; track $index) {
-        <swiper-slide>
-          <div class="slider-info">
-              <img class="imagensub" [src]="subServicio.img" alt="">          
-              <h2>{{subServicio.title}}</h2>
-              <p>{{subServicio.description}}</p>
-              <button>Saber mas</button></div>
-          </swiper-slide>
-        }  
-      </swiper-container>
-  </header>
-</main>`,
+  template:  `
+  <div class="swiper-principal">
+    <h2>SERVICIOS</h2>
+  <swiper-container init=false>
+  @for (swiperObject of swiperObjects; track $index) {
+    <swiper-slide><div class="slide-custom">
+      <img [src]="swiperObject.img" alt="">
+      <h2>{{swiperObject.title}}</h2>
+      <p>{{swiperObject.description}}</p>
+    </div></swiper-slide>
+  }
+  </swiper-container>
+  <div class="botones">
+  </div>
+  </div>
+  `,
   styleUrl: './servicios.component.css'
 })
 export class ServiciosComponent {
-    index: number = 0;
-  servicios : IServicio[] = servicios;
-  imagenPrincipal : string = `/servicios/${this.index + 1}.jpg`;
+  swiperElements = signal<SwiperContainer | null>(null);
+  swiperObjects: IServicio[] = servicios;
 
-  siguienteServicio(){
-    if(servicios.length - 1 == this.index){
-      this.index=0;
-      
-    }
-    else {
-      console.log(servicios.length - 1);
-      this.index++;
-    }
-  };
-
-  ngOnInit() {
-
-
+  ngOnInit(): void {
+    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperOptions: SwiperOptions = {
+      navigation:{
+        enabled:true,
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
+      },
+      slidesPerView: 'auto',
+      speed: 1500,
+      breakpoints: {
+        0:{
+          slidesPerView:1,
+        },
+      },
+      spaceBetween:100,
+      effect:"cube",
+      loop:true,
+      autoplay:true,
+      pagination:true
+    };
+    Object.assign(swiperElemConstructor!, swiperOptions);
+    this.swiperElements.set(swiperElemConstructor as SwiperContainer);
+    this.swiperElements()?.initialize();
   }
 
 }
