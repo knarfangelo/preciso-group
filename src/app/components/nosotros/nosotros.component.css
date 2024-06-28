@@ -1,75 +1,59 @@
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    display: flex;
-}
-.fondo{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
-
-p,h2,h4{
+.imagen-fondo{
     margin: 0;
     padding: 0;
-    height: 3em;
-    overflow: auto;
-    color: white;
-}
-swiper-slide p{
-    height: 9em;
-}
-h2{
-    margin-top: 20px;
-    height: 2em;
-    color: #3d7dd6;
-    text-transform: uppercase;
-}
-
-h4{
-    color: #398cff;
-}
-h4{
-    padding-top: 7px;
-    text-transform: uppercase;
-}
-.caja{
-    width: 20%;
-    height: 100%;
-}
-
-main{
-    width: 80%;
-    height: 100%;
-    background-color: #022454b7;
-    box-sizing: border-box;
-}
-
-img{
+    height: 100vh;
     width: 100%;
-    height: 80%;
+    object-fit: cover;
+    position: absolute;
+    z-index:-1;
+    background-repeat: no-repeat;
+}
+header{
+ display: flex;
+ height: 100vh;
+ color: #3D7DD6;
+ font-family: Arial, Helvetica, sans-serif;
+}
+h2,p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.nosotros{
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+}
+.espacio{
+    width: 25%;
+    background-color: transparent;
+}
+.imagen-slide{
+    width: 100%;
+    height: 35vh;
     object-fit: cover;
 }
-
+swiper-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3vh 3vw;
+}
 .contenido{
-    height: 15vh;
-    box-sizing: border-box;
-    padding: 1vh 2vw;
+    width: 75%;
+    height: 100%;
+    box-sizing: border-box; 
+    padding-top: 3vh;
+    background-color: #022454d5;
 }
-
-swiper-slide{
-    box-sizing: border-box;
-    height: 60vh;
-    padding: 1.5vh;
+p{
+    color: white;
+    padding: 2vh 0;
 }
-
-.boton{
-    text-align: center;
-    padding: 5vh 0;
+.caja-boton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 button{
     width: 150px;
     height: 40px;
@@ -84,8 +68,14 @@ button:hover{
     color: #022454;
     background-color: white;
 }
-
-swiper-container{
-    width: 80%;
-    height: 70vh;
-}
+/* Estilos para dispositivos móviles */
+@media (max-width: 1000px) {
+    .espacio {
+        width: 0;
+        height: 0;
+      background-color: #3D7DD6;
+    }
+    .contenido{
+        width: 100%;
+    }
+  }

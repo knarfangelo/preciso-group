@@ -2,9 +2,8 @@ import { CUSTOM_ELEMENTS_SCHEMA, Component, ElementRef, ViewChild, signal} from 
 import { SwiperContainer, register } from 'swiper/element/bundle';
 import { IServicio } from '../../models/IServicio';
 import { servicios } from '../../DataBase/serviciosDB/servicios';
-import { NgOptimizedImage } from '@angular/common';
 import { SwiperOptions } from 'swiper/types';
-import { EffectCube } from 'swiper/modules';
+
 register();
 @Component({
   selector: 'app-servicios',
@@ -14,7 +13,7 @@ register();
   template:  `
   <div class="swiper-principal">
     <h2>SERVICIOS</h2>
-  <swiper-container init=false>
+  <swiper-container in class="swiper-servicios" it=false>
   @for (swiperObject of swiperObjects; track $index) {
     <swiper-slide><div class="slide-custom">
       <img [src]="swiperObject.img" alt="">
@@ -36,7 +35,7 @@ export class ServiciosComponent {
   swiperObjects: IServicio[] = servicios;
 
   ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperElemConstructor = document.querySelector('.swiper-servicios');
     const swiperOptions: SwiperOptions = {
       navigation:{
         enabled:true,
