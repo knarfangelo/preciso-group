@@ -20,7 +20,9 @@ register();
       <img [src]="swiperObject.img" alt="">
       <h2>{{swiperObject.title}}</h2>
       <p>{{swiperObject.description}}</p>
-    </div></swiper-slide>
+    </div>
+    <button>Saber más</button>
+  </swiper-slide>
   }
   </swiper-container>
   <div class="botones">
@@ -41,15 +43,18 @@ export class ServiciosComponent {
         nextEl:'.swiper-button-next',
         prevEl:'.swiper-button-prev',
       },
-      slidesPerView: 'auto',
+      slidesPerView: 2.5,
       speed: 1500,
       breakpoints: {
         0:{
           slidesPerView:1,
         },
+        800:{
+          slidesPerView:2.5,
+        }
       },
-      spaceBetween:100,
-      effect:"cube",
+      spaceBetween:50,
+      effect:"",
       loop:true,
       autoplay:true,
       pagination:true

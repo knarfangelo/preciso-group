@@ -4,8 +4,34 @@
     padding-bottom: 20px;
 }
 swiper-container{
-    width: 50%;
+    width: 80%;
+}
+.swiper-principal > h2{
+    padding-left: 10%;
+}
+swiper-slide{
+    padding-bottom: 50px;
 }
 img{
     width: 100%;
+
+}
+.slide-custom > h2{
+    margin:0;
+    padding:0;
+    padding-bottom: 2vh;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: 0;
+    background-color: #022454;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover{
+    color: #022454;
+    background-color: white;
 }
