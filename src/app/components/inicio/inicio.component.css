@@ -49,6 +49,7 @@ li {
 .whatsapp a img {
     width: 25px;
     height: 25px;
+    background: transparent;
 }
 
 input {
@@ -67,6 +68,8 @@ a {
     text-decoration: none;
     transition: 500ms;
     position: relative; /* Necesario para el pseudo-elemento */
+    text-shadow: 2px 1px 10px rgb(255, 255, 255);
+
 }
 
 /* Estilos del pseudo-elemento */
@@ -98,6 +101,7 @@ header .fondo {
 li a img {
     width: 100%;
     height: auto;
+    box-shadow: 2px 1px 10px rgb(255, 255, 255);
 }
 
 header {
