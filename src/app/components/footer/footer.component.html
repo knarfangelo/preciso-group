@@ -6,57 +6,88 @@
             <button>SOLICITAR COTIZACION</button>
         </div>
         <div class="column border-column">
-            <ul>
-                <li><strong>¿NECESITA AYUDA?</strong></li>
+                
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>INICIO</summary>
+                <li>Nosotros</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+                <li>Buscar</li>                          
+                </details>
+            </ul>
+
+
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>¿NECESITAS AYUDA?</summary>
                 <li>Contacto</li>
                 <li>Preguntas frecuentes</li>
-                <li>Atencion al cliente</li>
-            </ul>
-            <ul>
-                <li><strong>PEDIDOS</strong></li>
-                <li>Visita tecnica</li>
+                <li>Atención al cliente</li> 
+                </details>            
+            </ul>   
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>PEDIDOS</summary>
+                <li>Visita técnica</li>
                 <li>Mantenimiento</li>
                 <li>Seguimiento</li>
                 <li>Formularios</li>
                 <li>Consultas</li>
+                </details>
             </ul>
-            <ul>
-                <li><strong>SERVICIOS</strong></li>
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>SERVICIOS</summary>
                 <li>Personalizados</li>
-                <li>Electricos</li>
+                <li>Eléctricos</li>
                 <li>Tableros</li>
                 <li>Instalaciones</li>
                 <li>Supervisión</li>
+                </details>
             </ul>
         </div>
         <div class="column">
-            <ul>
-                <li><strong>BLOG</strong></li>
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>BLOG</summary>
                 <li>Noticias</li>
                 <li>Exposiciones</li>
                 <li>Ferias</li>
+                </details>
             </ul>
-            <ul>
-                <li><strong>QUIÉNES SOMOS</strong></li>
+            
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>QUIÉNES SOMOS</summary>
                 <li>Empresa</li>
                 <li>GRUPO PRECISO</li>
                 <li>Valores</li>
                 <li>Galeria</li>
                 <li>Proyectos realizados</li>
+                </details>
             </ul>
-            <ul>
-                <li><strong>CONDICIONES Y AVISO LEGAL</strong></li>
+            <ul class="lista-style">
+                <details [open]="isDetailsOpen">
+                <summary>CONDICIONES Y AVISO LEGAL</summary>
                 <li>Privacidad y seguridad</li>
                 <li>Cookie Policy</li>
                 <li>Cookie Center</li>
+                </details>
             </ul>
             <ul>
-                <li><strong>Formas de Pago</strong></li>
-                <li><img src="formasdepago.png" alt="Formas de Pago"></li>
+                <li><strong>FORMAS DE PAGO</strong></li>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
             </ul>
             <ul>
-                <li><strong>SIGUENOS</strong></li>
-                <li><img src="redessociales.png" alt="Redes Sociales"></li>
+                <li><strong>SÍGUENOS</strong></li>
+                <a href=""><img width="50px" src="/footer/youtube.svg" alt=""></a>
+                <a href=""><img width="50px" src="/footer/instagram.svg" alt=""></a>
+                <a href=""><img width="50px" src="/footer/linkedin.svg" alt=""></a>
+                <a href=""><img width="50px" src="/footer/youtube.svg" alt=""></a>
             </ul>
         </div>
     </div>

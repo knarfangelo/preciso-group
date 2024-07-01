@@ -56,4 +56,11 @@ footer {
     .border-column{
         border: 0;
     }
+    .lista-style{
+        border-bottom: 2px solid gray;
+    }
+    summary{
+        padding: 10px 0;
+        background-color: rgb(212, 212, 212);
+    }
 }
