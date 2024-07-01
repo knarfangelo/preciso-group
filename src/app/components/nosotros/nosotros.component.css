@@ -30,7 +30,7 @@ main{
     background: linear-gradient(to bottom, #2458a5cb, #2458a58c);
     height: auto;
     box-sizing: border-box;
-    padding: 2vh 2vw;
+    padding: 2vh 9vw;
 }
 .caja-button{
     display: flex;
