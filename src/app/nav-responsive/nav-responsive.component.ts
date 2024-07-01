@@ -13,4 +13,7 @@ export class NavResponsiveComponent {
   toggleNavbar() {
     this.isOpen = !this.isOpen;
   }
+  closeNavbar() {
+    this.isOpen = false;
+  }
 }

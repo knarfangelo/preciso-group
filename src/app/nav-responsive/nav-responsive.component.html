@@ -14,12 +14,12 @@
     
         <nav  class="navbar" [class.open]="isOpen">
             <ul>
-                <li class="nosotros"><a href="inicio#nosotros"> Nosotros</a></li>
-                <li class="servicios"> <a href="inicio#servicios">Servicios</a></li>
+                <li class="nosotros"><a href="inicio#nosotros" (click)="closeNavbar()"> Nosotros</a></li>
+                <li class="servicios"> <a href="inicio#servicios" (click)="closeNavbar()">Servicios</a></li>
                 <li class="buscar"> <input  type="text" placeholder="Buscar"></li>
-                <li class="contacto"> <a  href="inicio#contacto">Contacto</a></li>
-                <li class="banderaperu"> <a href=""><img class="imgperu"  src="/perubandera.png" alt=""></a></li>
-                <li class="eeuubandera"> <a href="">    <img class="imgeeuu"  src="/eeuubandera.png" alt=""></a></li>
+                <li class="contacto"> <a  href="inicio#contacto" (click)="closeNavbar()">Contacto</a></li>
+                <li class="banderaperu"> <a href="" (click)="closeNavbar()"><img class="imgperu"  src="/perubandera.png" alt=""></a></li>
+                <li class="eeuubandera"> <a href="" (click)="closeNavbar()">    <img class="imgeeuu"  src="/eeuubandera.png" alt=""></a></li>
                 <li class="whatsapp"> <a href="https://wa.link/p4pb6v"><img class="imgwhatsapp" src="/whatsapp.png" alt=""></a></li>
             </ul>
         </nav>
