@@ -1,3 +1,5 @@
+
+
 /* Estilos generales */
 ul {
     list-style: none;
@@ -135,7 +137,9 @@ header .titulo-2 {
     ul {
         flex-direction: column;
     }
-
+    li {
+        border: 0;
+    }
     nav {
         width: 100%;
     }

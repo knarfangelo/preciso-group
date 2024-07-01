@@ -49,7 +49,6 @@ export class GaleriaComponent {
       coverflowEffect:{
         slideShadows:false,
       },
-      loop:true,
       autoplay:true,
       pagination:true
     };
