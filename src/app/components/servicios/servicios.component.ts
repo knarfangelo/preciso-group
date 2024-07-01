@@ -3,8 +3,6 @@ import { SwiperContainer, register } from 'swiper/element/bundle';
 import { IServicio } from '../../models/IServicio';
 import { servicios } from '../../DataBase/serviciosDB/servicios';
 import { SwiperOptions } from 'swiper/types';
-import { NgOptimizedImage } from '@angular/common';
-
 register();
 @Component({
   selector: 'app-servicios',
@@ -59,7 +57,7 @@ export class ServiciosComponent {
           slidesPerView:2,
         },
         1200:{
-          slidesPerView:2.5,
+          slidesPerView:2,
         }
       },
       spaceBetween:50,

@@ -29,6 +29,7 @@ main{
     box-sizing: border-box;
     padding: 20px;
     background-color: #86B9F7;
+    border-radius: 10px;
 }
 
 swiper-container{
