@@ -6,11 +6,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { GaleriaComponent } from '../galeria/galeria.component';
 import { BlogComponent } from '../blog/blog.component';
 import { RouterLink } from '@angular/router';
+import { NavResponsiveComponent } from '../../nav-responsive/nav-responsive.component';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent, RouterLink],
+  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent, RouterLink, NavResponsiveComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

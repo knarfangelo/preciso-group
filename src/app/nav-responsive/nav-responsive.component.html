@@ -1,0 +1,23 @@
+       <div class="titulo-responsive">
+
+    
+       <button class="button-responsive"  (click)="toggleNavbar()">  <svg viewBox="0 0 100 80" width="40" height="40" fill="#002150">
+        <rect width="100" height="20" rx="10" ry="10"></rect> <!-- Borde redondeado con rx y ry -->
+        <rect y="30" width="100" height="20" rx="10" ry="10"></rect>
+        <rect y="60" width="100" height="20" rx="10" ry="10"></rect>
+      </svg>
+    </button>
+        <a  href=""><img class="imgtitulo" src="/titulo.png" alt=""></a>
+     </div>
+ 
+    <nav  class="navbar" [class.open]="isOpen">
+        <ul>
+            <li class="nosotros"><a href="inicio#nosotros"> Nosotros</a></li>
+            <li class="servicios"> <a href="inicio#servicios">Servicios</a></li>
+            <li class="buscar"> <input  type="text" placeholder="Buscar"></li>
+            <li class="contacto"> <a  href="inicio#contacto">Contacto</a></li>
+            <li class="banderaperu"> <a href=""><img class="imgperu"  src="/perubandera.png" alt=""></a></li>
+            <li class="eeuubandera"> <a href="">    <img class="imgeeuu"  src="/eeuubandera.png" alt=""></a></li>
+            <li class="whatsapp"> <a href="https://wa.link/p4pb6v"><img class="imgwhatsapp" src="/whatsapp.png" alt=""></a></li>
+        </ul>
+    </nav>
