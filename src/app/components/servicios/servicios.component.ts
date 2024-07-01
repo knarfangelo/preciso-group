@@ -13,7 +13,7 @@ register();
   imports: [],
   template:  `
   <header>
-  <h2>SERVICIOS</h2>
+  <h2 class="titulo">NUESTROS SERVICIOS</h2>
   <main>
       <div class="slide-principal">
           <img [srcset]="swiperObjects[0].img" alt="">

@@ -3,6 +3,14 @@ header{
 }
 h2{
     text-transform: uppercase;
+    text-shadow: 0 1px 1px #2c2c2c;
+
+}
+.titulo{
+    padding-left: 20px;
+}
+p{
+    text-shadow: 0 1px 1px #2c2c2c;
 }
 img{
     width: 100%;
@@ -32,6 +40,7 @@ swiper-slide{
     margin-bottom: 60px;
 }
 button{
+    font-weight: bold;
     border-radius: 25px;
     width: 200px;
     height: 35px;
