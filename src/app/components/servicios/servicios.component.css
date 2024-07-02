@@ -61,5 +61,11 @@ button:hover{
     }
     .slide-principal{
         width: 100%;
+        padding: 8%;
+    }
+    swiper-container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8%;
     }
 }
