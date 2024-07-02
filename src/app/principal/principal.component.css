@@ -12,7 +12,15 @@
     background-color: white;
     justify-content: center;
   }
-  
+  a{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
   .titulo img {
     width: auto;
     height: 80px;
