@@ -39,7 +39,7 @@ main{
     width: 30%;
     box-sizing: border-box;
     padding: 20px;
-    background-color: #86B9F7;
+    background-color: #AFD0FE;
 }
 
 swiper-container{
@@ -60,7 +60,7 @@ button{
 }
 
 button:hover{
-    background-color: #AFD0FE;
+    background-color: #6E98D4;
     color: #18448F;
 }
 .titulo-blog{

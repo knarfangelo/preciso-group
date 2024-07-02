@@ -16,7 +16,7 @@ img {
 
 li {
     height: 80px;
-    border-right: 3px solid #002150;
+    border-right: 3px solid #18437F;
     position: relative; /* Necesario para el pseudo-elemento */
 }
 
@@ -91,7 +91,7 @@ a:hover::after {
     width: 100%; /* Ancho de la barra en hover */
 }
 a:hover{
-    background-color: #002150;
+    background-color: #18437F;
     color: white;
 }
 header .fondo {

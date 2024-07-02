@@ -28,7 +28,7 @@ main{
     width: 30%;
     box-sizing: border-box;
     padding: 20px;
-    background-color: #86B9F7;
+    background-color: #AFD0FE;
     border-radius: 10px;
 }
 
@@ -51,8 +51,8 @@ button{
 }
 
 button:hover{
-    background-color: #AFD0FE;
-    color: #18448F;
+    background-color: #6E98D4;
+    color: #18437F;
 }
 
 @media (max-width: 800px) {
