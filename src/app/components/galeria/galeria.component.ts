@@ -11,14 +11,17 @@ register();
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   imports: [],
   template:  `
-  <h2>GALERIA</h2>
-  <swiper-container class="swiper-galeria" init=false>
-  @for (swiperObject of swiperObjects; track $index) {
-    <swiper-slide class="slide-galeria"><div class="slide-custom">
-      <img [src]="swiperObject" alt="">
-    </div></swiper-slide>
-  }
-  </swiper-container>
+  <header>
+    <h2>GALERIA</h2>
+    <swiper-container class="swiper-galeria" init=false>
+    @for (swiperObject of swiperObjects; track $index) {
+      <swiper-slide class="slide-galeria"><div class="slide-custom">
+        <img [src]="swiperObject" alt="">
+      </div></swiper-slide>
+    }
+    </swiper-container>
+  </header>
+
   `,
   styleUrl: './galeria.component.css'
 })

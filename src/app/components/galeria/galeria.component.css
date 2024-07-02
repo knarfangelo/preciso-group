@@ -26,3 +26,10 @@ img{
     padding: 50px;
     padding-bottom: 120px;
 }
+@media (max-width: 800px) {
+    .slide-galeria{
+        box-sizing: border-box;
+        padding: 9%;
+        padding-bottom: 120px;
+    }
+}
