@@ -108,6 +108,10 @@ li a img {
 
 header {
     width: 100%;
+    background-image: url("/inicio/cabecera.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     height: calc(100vh - 80px);
 }
