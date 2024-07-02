@@ -66,12 +66,18 @@ button:hover{
 .titulo-blog{
     height: 100px;
 }
-
+.style-button{
+    width: 100%;
+    text-align: center;
+}
 @media (max-width: 800px) {
     main{
         flex-direction: column;
     }
     .slide-principal{
         width: 100%;
+    }
+    swiper-container{
+        width: 80%;
     }
 }

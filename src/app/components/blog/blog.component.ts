@@ -24,7 +24,7 @@ register();
           <p>{{swiperObject.subtitle}}</p>
           <h2 class="titulo-blog">{{swiperObject.title}}</h2>
         </div>
-        <button>Más</button>
+        <div class="style-button"><button>Más</button></div>
       </swiper-slide>
       }
       </swiper-container>
