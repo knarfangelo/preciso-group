@@ -57,7 +57,8 @@ export class Servicios2Component {
           slidesPerView:3,
         }
       },
-      spaceBetween:50
+      spaceBetween:50,
+      loop:true,
     };
     Object.assign(swiperElemConstructor!, swiperOptions);
     this.swiperElements.set(swiperElemConstructor as SwiperContainer);

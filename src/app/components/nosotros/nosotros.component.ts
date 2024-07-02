@@ -64,6 +64,7 @@ export class NosotrosComponent {
       spaceBetween:100,
       effect:"slide",
       autoplay:true,
+      loop:true,
     };
     Object.assign(swiperElemConstructor!, swiperOptions);
     this.swiperElements.set(swiperElemConstructor as SwiperContainer);

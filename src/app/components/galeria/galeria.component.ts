@@ -50,7 +50,9 @@ export class GaleriaComponent {
         slideShadows:false,
       },
       autoplay:true,
-      pagination:true
+      pagination:true,
+      loop:true,
+
     };
     Object.assign(swiperElemConstructor!, swiperOptions);
     this.swiperElements.set(swiperElemConstructor as SwiperContainer);

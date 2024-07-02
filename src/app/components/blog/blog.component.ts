@@ -60,6 +60,7 @@ export class BlogComponent {
         }
       },
       spaceBetween:50,
+      loop:true,
       pagination:true,
     };
     Object.assign(swiperElemConstructor!, swiperOptions);

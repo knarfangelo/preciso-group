@@ -62,6 +62,7 @@ export class ServiciosComponent {
       },
       spaceBetween:50,
       pagination:true,
+      loop:true,
     };
     Object.assign(swiperElemConstructor!, swiperOptions);
     this.swiperElements.set(swiperElemConstructor as SwiperContainer);
