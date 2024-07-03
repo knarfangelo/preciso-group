@@ -40,7 +40,7 @@ export const servicios: IServicio[] = [
         ]
     },
     {
-        img: '/servicios/2.jpg',
+        img: '/servicios/4.jpg',
         title: 'Soluciones para movilidad eléctrica',
         description: 'Brindamos servicios integrales de mantenimiento para subestaciones eléctricas, garantizando su óptimo funcionamiento y seguridad.',
         subServicio: [
@@ -99,7 +99,7 @@ export const servicios: IServicio[] = [
    
    
     {
-        img: '/servicios/3.jpg',
+        img: '/servicios/5.jpg',
         title: 'Servicio de mantenimiento de tableros eléctricos',
         description: 'Realizamos el mantenimiento rutinario de los tableros eléctricos como la forma ideal de garantizar el buen funcionamiento de las instalaciones eléctricas. Estos dispositivos son fundamentales para el normal funcionamiento de los fluidos eléctricos en plantas industriales, residenciales, de viviendas y comerciales.',
         subServicio: [
@@ -118,7 +118,7 @@ export const servicios: IServicio[] = [
         ]
     }, 
     {
-        img: '/servicios/3.jpg',
+        img: '/servicios/6.jpg',
         title: 'Pozos a tierra',
         description: 'En Preciso, te ofrecemos todo el detalle del diseño técnico del pozo a tierra (tipo de varilla, características, profundidad, camas que se han realizado de tierras, dimensiones de las varillas con el conector A/B, etc). Además, los certificados que emitimos son válidos para INDECI, auditorías y para obtener la licencia de funcionamiento.',
         subServicio: [
@@ -137,7 +137,7 @@ export const servicios: IServicio[] = [
         ]
     },
     {
-        img: '/servicios/3.jpg',
+        img: '/servicios/7.jpg',
         title: 'Otros servicios',
         description: '',
         subServicio: [

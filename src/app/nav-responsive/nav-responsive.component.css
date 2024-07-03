@@ -156,7 +156,7 @@ svg{
     }
     .navbar {
         width: 100%;
-        transform: translateX(-100vh);
+        transform: translateX(-100vw);
         transition: transform 0.3s ease;
         position: absolute;
         z-index: 20;
