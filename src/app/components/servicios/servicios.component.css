@@ -4,13 +4,12 @@ header{
 h2{
     text-transform: uppercase;
     text-shadow: 0 1px 1px #2c2c2c;
-
+    color: #18437F;
 }
 .titulo{
     padding-left: 20px;
 }
 p{
-    text-shadow: 0 1px 1px #2c2c2c;
 }
 img{
     width: 100%;
