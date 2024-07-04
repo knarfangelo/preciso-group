@@ -9,13 +9,31 @@ export const servicios: IServicio[] = [
             {
                 img: "/servicios/1.jpg",
                 title: "Diseño del sistema",
-                description: "Realizamos un estudio detallado de las necesidades energéticas del cliente y diseñamos sistemas personalizados que optimizan el uso de la energía.",
+                description: "Realizamos el diseño e Ingeniería del Sistema de utilización en Media y baja tensión: solicitamos la factibilidad del suministro y el punto de diseño, elaboración del expediente técnico y la aprobación del concesionario, brindamos el suministro de los equipos y materiales para el sistema de utilización, así como realizamos el montaje del sistema de utilización en media y baja tensión.",
+                subServicio: []
+            },
+            {
+                img: "/servicios/1.jpg",
+                title: "Suministro de equipos",
+                description: "Vendemos los conductores eléctricos, los transformadores, las celdas y todos los equipos y materiales necesarios y aprobados por el concesionario en el expediente técnico.",
                 subServicio: []
             },
             {
                 img: "/servicios/1.jpg",
                 title: "Instalación de equipos",
-                description: "Instalamos transformadores, interruptores, paneles de distribución y otros equipos necesarios para la correcta operación del sistema de media y baja tensión.",
+                description: "Instalamos todos los equipos y materiales que forman parte de la red externa, la red interna y la subestación en media tensión, así como los tableros en baja tensión.",
+                subServicio: []
+            },
+            {
+                img: "/servicios/1.jpg",
+                title: "Pruebas y puesta en marcha",
+                description: "Realizamos pruebas de funcionamiento en conjunto con la concesionaria y aseguramos la puesta en marcha del sistema de utilización en media tensión.",
+                subServicio: []
+            },
+            {
+                img: "/servicios/1.jpg",
+                title: "Mantenimiento y soporte técnico",
+                description: "Ofrecemos servicios de mantenimiento preventivo y correctivo para garantizar la continuidad y eficiencia del sistema.",
                 subServicio: []
             },
         ]
@@ -28,15 +46,9 @@ export const servicios: IServicio[] = [
             {
                 img: "/servicios/3.jpg",
                 title: "Diseño y planificación",
-                description: "Realizamos un estudio exhaustivo del terreno y las necesidades del cliente para diseñar redes eléctricas optimizadas.",
+                description: "Realizamos un estudio exhaustivo del terreno y las necesidades del cliente para diseñar redes eléctricas optimizadas. Solicitud de la factibilidad del suministro y punto de diseño con el concesionario eléctrico. Elaboración del expediente técnico de la red primaria para su presentación y aprobación por el concesionario eléctrico",
                 subServicio: []
             },
-            {
-                img: "/servicios/3.jpg",
-                title: "Instalación de cables y equipos",
-                description: "Instalamos cables de alta calidad y equipos necesarios para el correcto funcionamiento de la red eléctrica, garantizando la seguridad y eficiencia del sistema.",
-                subServicio: []
-            }
         ]
     },
     {

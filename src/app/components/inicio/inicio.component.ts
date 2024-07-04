@@ -7,11 +7,12 @@ import { GaleriaComponent } from '../galeria/galeria.component';
 import { BlogComponent } from '../blog/blog.component';
 import { RouterLink } from '@angular/router';
 import { NavResponsiveComponent } from '../../nav-responsive/nav-responsive.component';
+import { Subservicios1Component } from '../subservicio/subservicios-1/subservicios-1.component';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent, RouterLink, NavResponsiveComponent],
+  imports: [ServiciosComponent, Servicios2Component, NosotrosComponent,GaleriaComponent,FooterComponent, BlogComponent, RouterLink, NavResponsiveComponent, Subservicios1Component],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
