@@ -2,10 +2,9 @@
     <main>
         <div class="titulo"><img src="titulo.png" alt=""></div>
         <div class="imagenes">
-            <div class="subpanel" (mouseenter)="startPreview(consultantsVideo)" (mouseleave)="stopPreview()">
+            <div class="subpanel" (mouseenter)="startPreview(consultantsVideo)">
                 <div class="video-container">
-                    <img #consultantsPreview src="/images/consultants-preview.jpg" alt="Consultants Preview" class="video-placeholder">
-                    <video #consultantsVideo muted loop (loadeddata)="hidePlaceholder(consultantsPreview)">
+                    <video #consultantsVideo muted loop>
                         <source src="/videos/industry.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -14,10 +13,9 @@
                     <button routerLink="inicio">CONOCE MÁS</button>
                 </div>
             </div>
-            <div class="subpanel" (mouseenter)="startPreview(expressVideo)" (mouseleave)="stopPreview()">
+            <div class="subpanel" (mouseenter)="startPreview(expressVideo)">
                 <div class="video-container">
-                    <img #expressPreview src="/images/express-preview.jpg" alt="Express Preview" class="video-placeholder">
-                    <video #expressVideo muted loop (loadeddata)="hidePlaceholder(expressPreview)">
+                    <video #expressVideo muted loop>
                         <source src="/videos/express.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -26,10 +24,9 @@
                     <button routerLink="subservicio1">CONOCE MÁS</button>
                 </div>
             </div>
-            <div class="subpanel" (mouseenter)="startPreview(industryVideo)" (mouseleave)="stopPreview()">
+            <div class="subpanel" (mouseenter)="startPreview(industryVideo)">
                 <div class="video-container">
-                    <img #industryPreview src="/images/industry-preview.jpg" alt="Industry Preview" class="video-placeholder">
-                    <video #industryVideo muted loop (loadeddata)="hidePlaceholder(industryPreview)">
+                    <video #industryVideo muted loop>
                         <source src="/videos/consultants.mp4" type="video/mp4">
                     </video>
                 </div>
