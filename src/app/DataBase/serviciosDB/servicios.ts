@@ -30,12 +30,6 @@ export const servicios: IServicio[] = [
                 description: "Realizamos pruebas de funcionamiento en conjunto con la concesionaria y aseguramos la puesta en marcha del sistema de utilización en media tensión.",
                 subServicio: []
             },
-            {
-                img: "/servicios/1.jpg",
-                title: "Mantenimiento y soporte técnico",
-                description: "Ofrecemos servicios de mantenimiento preventivo y correctivo para garantizar la continuidad y eficiencia del sistema.",
-                subServicio: []
-            },
         ]
     }, 
     {
@@ -54,7 +48,7 @@ export const servicios: IServicio[] = [
     {
         img: '/servicios/4.jpg',
         title: 'Soluciones para movilidad eléctrica',
-        description: 'Brindamos servicios integrales de mantenimiento para subestaciones eléctricas, garantizando su óptimo funcionamiento y seguridad.',
+        description: 'Ofrecemos soluciones de carga eléctrica para todos los sectores, desde zonas residenciales hasta ámbitos industriales.',
         subServicio: [
             {
                 img: "/servicios/2.jpg",
@@ -132,7 +126,7 @@ export const servicios: IServicio[] = [
     {
         img: '/servicios/6.jpg',
         title: 'Pozos a tierra',
-        description: 'En Preciso, te ofrecemos todo el detalle del diseño técnico del pozo a tierra (tipo de varilla, características, profundidad, camas que se han realizado de tierras, dimensiones de las varillas con el conector A/B, etc). Además, los certificados que emitimos son válidos para INDECI, auditorías y para obtener la licencia de funcionamiento.',
+        description: 'Ofrecemos detalles completos del diseño técnico del pozo a tierra y certificados válidos para INDECI.',
         subServicio: [
             {
                 img: "/servicios/3.jpg",
@@ -151,7 +145,7 @@ export const servicios: IServicio[] = [
     {
         img: '/servicios/7.jpg',
         title: 'Otros servicios',
-        description: '',
+        description: 'Ofrecemos protección de energía, instalación y mantenimiento de generadores, cambio de tarifa eléctrica, entre otros.',
         subServicio: [
            
         ]
