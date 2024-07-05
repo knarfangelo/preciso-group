@@ -49,8 +49,8 @@ li {
 }
 
 .whatsapp a img {
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
     background: transparent;
 }
 
@@ -101,7 +101,6 @@ header .fondo {
 li a img {
     width: 100%;
     height: auto;
-    box-shadow: 2px 1px 10px rgb(255, 255, 255);
 }
 
 
@@ -162,16 +161,16 @@ svg{
         z-index: 20;
         background-color: white;
     }
-
     .navbar.open {
         transform: translateX(0); /* Mostrar el menú */
         position: absolute;
     } 
 
-    .nosotros, .servicios, .titulo, .buscar, .contacto, .banderaperu, .eeuubandera {
+    .nosotros, .servicios, .titulo, .buscar, .contacto, .banderaperu, .eeuubandera,.imgwhatsapp {
         width: 100%;
     }
 
+    
     .titulo a img {
         height: 100%;
         object-fit: contain;

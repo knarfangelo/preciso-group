@@ -5,7 +5,7 @@ import { NosotrosComponent } from '../nosotros/nosotros.component';
 import { FooterComponent } from '../footer/footer.component';
 import { GaleriaComponent } from '../galeria/galeria.component';
 import { BlogComponent } from '../blog/blog.component';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NavResponsiveComponent } from '../../nav-responsive/nav-responsive.component';
 import { Subservicios1Component } from '../subservicios-1/subservicios-1.component';
 import { Subservicios3Component } from '../subservicios-3/subservicios-3.component';
@@ -24,6 +24,25 @@ import { Subservicios6Component } from '../subservicios-6/subservicios-6.compone
 })
 export class InicioComponent {
 
-     
-
+  scrollToNosotros(event: Event) {
+    event.preventDefault(); // Prevent default anchor tag behavior
+    const targetElement = document.getElementById('nosotros');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling
+    }
+  }
+  scrollToServicio(event: Event) {
+    event.preventDefault(); // Prevent default anchor tag behavior
+    const targetElement = document.getElementById('servicios');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling
+    }
+  }
+  scrollToContacto(event: Event) {
+    event.preventDefault(); // Prevent default anchor tag behavior
+    const targetElement = document.getElementById('contacto');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // Smooth scrolling
+    }
+  }
 }

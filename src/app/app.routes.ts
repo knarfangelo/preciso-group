@@ -11,7 +11,7 @@ import { Subservicios5Component } from './components/subservicios-5/subservicios
 import { Subservicios6Component } from './components/subservicios-6/subservicios-6.component';
 import { Subservicios7Component } from './components/subservicios-7/subservicios-7.component';
 export const routes: Routes = [
-    {path:'nosotros', component:NosotrosComponent},
+    {path:'nosotros/:id', component:NosotrosComponent},
     {path:'', component:PrincipalComponent},
     {path:'inicio', component:InicioComponent},
     {path:'servicios', component:ServiciosComponent},

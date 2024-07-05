@@ -94,6 +94,10 @@ a:hover{
     background-color: #18437F;
     color: white;
 }
+.ulrtitulo:hover{
+    background-color: white;
+    color: white;
+}
 header .fondo {
     width: 100%;
     height: 100%;

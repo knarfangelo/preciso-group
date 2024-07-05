@@ -1,19 +1,16 @@
 
 <app-nav-responsive></app-nav-responsive>
-
-
-
-<main>
+<main id="inicio">
     <nav>
         <ul>
-            <li class="titulo"> <a  href=""><img class="imgtitulo" src="/titulo.png" alt=""></a></li>
-            <li class="nosotros"><a href="inicio#nosotros"> Nosotros</a></li>
-            <li class="servicios"> <a href="inicio#servicios">Servicios</a></li>
+            <li class="titulo"> <a class="ulrtitulo"  href=""><img class="imgtitulo" src="titulo.svg" alt=""></a></li>
+            <li class="nosotros"><a  href="javascript:void(0)" (click)="scrollToNosotros($event)"> Nosotros</a></li>
+            <li class="servicios"> <a href="javascript:void(0)" (click)="scrollToServicio($event)">Servicios</a></li>
             <li class="buscar"> <input  type="text" placeholder="Buscar"></li>
-            <li class="contacto"> <a  href="inicio#contacto">Contacto</a></li>
+            <li class="contacto"> <a  href="javascript:void(0)" (click)="scrollToContacto($event)">Contacto</a></li>
             <li class="banderaperu"> <a href=""><img class="imgperu"  src="/perubandera.png" alt=""></a></li>
             <li class="eeuubandera"> <a href=""><img class="imgeeuu"  src="/eeuubandera.png" alt=""></a></li>
-            <li class="whatsapp"> <a href="https://wa.link/p4pb6v"><svg class="imgwhatsapp" src="/whatsapp.svg" alt="">
+            <li class="whatsapp"> <a href="https://wa.link/j87pss"><svg class="imgwhatsapp" src="/whatsapp.svg" alt="">
                 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
                     <defs>
                       <style>
@@ -29,7 +26,7 @@
     </nav>
     <header>
         <div class="transparencia"></div>
-        <img class="titulo-2" src="/principal/Industry.png" alt="">
+        <img class="titulo-2" src="/principal/preciso7.svg" alt="">
     </header>
 
 </main>

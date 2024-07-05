@@ -12,6 +12,10 @@ export class PrincipalComponent {
   @ViewChild('consultantsVideo') consultantsVideoRef!: ElementRef<HTMLVideoElement>;
   @ViewChild('expressVideo') expressVideoRef!: ElementRef<HTMLVideoElement>;
   @ViewChild('industryVideo') industryVideoRef!: ElementRef<HTMLVideoElement>;
+  
+  @ViewChild('consultantsPreview') consultantsPreviewRef!: ElementRef<HTMLImageElement>;
+  @ViewChild('expressPreview') expressPreviewRef!: ElementRef<HTMLImageElement>;
+  @ViewChild('industryPreview') industryPreviewRef!: ElementRef<HTMLImageElement>;
 
   private previewTimeout: any;
 
@@ -26,14 +30,18 @@ export class PrincipalComponent {
     if (this.previewTimeout) {
       clearTimeout(this.previewTimeout);
     }
-    this.consultantsVideoRef.nativeElement.currentTime = 0;
-    this.expressVideoRef.nativeElement.currentTime = 0;
-    this.industryVideoRef.nativeElement.currentTime = 0;
-    this.consultantsVideoRef.nativeElement.playbackRate = 1;
-    this.expressVideoRef.nativeElement.playbackRate = 1;
-    this.industryVideoRef.nativeElement.playbackRate = 1;
-    this.consultantsVideoRef.nativeElement.pause();
-    this.expressVideoRef.nativeElement.pause();
-    this.industryVideoRef.nativeElement.pause();
+    this.resetVideo(this.consultantsVideoRef.nativeElement);
+    this.resetVideo(this.expressVideoRef.nativeElement);
+    this.resetVideo(this.industryVideoRef.nativeElement);
+  }
+
+  private resetVideo(video: HTMLVideoElement) {
+    video.currentTime = 0;
+    video.playbackRate = 1;
+    video.pause();
+  }
+
+  hidePlaceholder(image: HTMLImageElement) {
+    image.style.display = 'none';
   }
 }
