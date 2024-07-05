@@ -67,4 +67,5 @@ export const blogs:IBlog[] = [
         subtitle: "INFORMACIÓN PRECISA",
         title: "Seguridad Eléctrica"
     },
+    
 ]

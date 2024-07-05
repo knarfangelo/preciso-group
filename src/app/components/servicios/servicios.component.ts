@@ -19,7 +19,7 @@ register();
           <img [srcset]="swiperObjects[0].img" alt="">
           <h2>{{swiperObjects[0].title}}</h2>
           <p>{{swiperObjects[0].description}}</p>
-          <button [routerLink]="['../subservicios1','subservicios1']" >Saber más</button>
+          <button [routerLink]="'../subservicios1'" >Saber más</button>
       </div>
       <swiper-container init=false class="swiper-wrapper swiper-servicios">
       @for (swiperObject of swiperObjects; track $index; let i = $index) {
@@ -28,7 +28,7 @@ register();
           <h2>{{swiperObject.title}}</h2>
           <p>{{swiperObject.description}}</p>
         </div>
-        <button  [routerLink]="rutas[1]" >Saber más</button>
+        <button  [routerLink]="rutas[i]" >Saber más</button>
       </swiper-slide>
       }
       </swiper-container>
@@ -40,10 +40,19 @@ register();
 export class ServiciosComponent {
   swiperElements = signal<SwiperContainer | null>(null);
   swiperObjects: IServicio[] = servicios;
-  rutas: string[] = ['../subservicio1', 'subservicios-2', 'subservicios-3', 'subservicios-4', 'subservicios-5', 'subservicios-6', 'subservicios-7'];
+  rutas: string[] = ['../subservicios1', '../subservicios4', '../subservicios7', '../subservicios3', '../subservicios2', '../subservicios5','../subservicios6', '../subservicios7'];
+  constructor(private router: Router, private viewportScroller: ViewportScroller) { 
 
+  }
 
   ngOnInit(): void {
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+
     const swiperElemConstructor = document.querySelector('.swiper-servicios');
     const swiperOptions: SwiperOptions = {
       autoplay:true,
