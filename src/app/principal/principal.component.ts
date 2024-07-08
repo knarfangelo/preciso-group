@@ -1,13 +1,14 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { InicioComponent } from "../components/inicio/inicio.component";
 
 @Component({
-  selector: 'app-principal',
-  standalone: true,
-  imports: [RouterLink, NgOptimizedImage],
-  templateUrl: './principal.component.html',
-  styleUrl: './principal.component.css'
+    selector: 'app-principal',
+    standalone: true,
+    templateUrl: './principal.component.html',
+    styleUrl: './principal.component.css',
+    imports: [RouterLink, NgOptimizedImage, InicioComponent]
 })
 export class PrincipalComponent {
   @ViewChild('consultantsVideo') consultantsVideoRef!: ElementRef<HTMLVideoElement>;

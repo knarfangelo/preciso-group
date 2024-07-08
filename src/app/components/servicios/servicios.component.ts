@@ -40,7 +40,7 @@ register();
 export class ServiciosComponent {
   swiperElements = signal<SwiperContainer | null>(null);
   swiperObjects: IServicio[] = servicios;
-  rutas: string[] = ['../subservicios1', '../subservicios4', '../subservicios7', '../subservicios3', '../subservicios2', '../subservicios5','../subservicios6', '../subservicios7'];
+  rutas: string[] = ['../subservicios1', '../subservicios4', '../subservicios7', '../subservicios3', '../subservicios2', '../subservicios5','../subservicios6', '../subservicios8'];
   constructor(private router: Router, private viewportScroller: ViewportScroller) { 
 
   }

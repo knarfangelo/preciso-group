@@ -14,7 +14,6 @@ import { Subservicios8Component } from './components/subservicios-8/subservicios
 export const routes: Routes = [
     {path:'nosotros/:id', component:NosotrosComponent},
     {path:'', component:PrincipalComponent},
-    {path:'inicio', component:InicioComponent},
     {path:'servicios', component:ServiciosComponent},
     {path:'subservicios1', component:Subservicios1Component}, 
     {path:'subservicios2', component:Subservicios2Component}, 
@@ -24,4 +23,5 @@ export const routes: Routes = [
     {path:'subservicios6', component:Subservicios6Component}, 
     {path:'subservicios7', component:Subservicios7Component}, 
     {path:'subservicios8', component:Subservicios8Component}, 
+    {path:'**', component:InicioComponent}
 ];
