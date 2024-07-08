@@ -4,34 +4,34 @@
         <div class="imagenes">
             <div class="subpanel"  (mouseenter)="startPreview(consultantsVideo)">
                 <div class="video-container">
-                    <video #consultantsVideo muted loop playsinline preload=none>
-                        <source src="/videos/industry.mp4" type="video/mp4">
+                    <video #consultantsVideo muted loop playsinline>
+                        <source src="/videos/industry.mp4" type="video/mp4" >
                     </video>
                 </div>
                 <div class="subpanel-texto">
-                    <img src="/principal/Industry.png" alt="">
+                    <img ngSrc="/principal/Industry.png" alt="" [width]="300" [height]="80">
                     <button routerLink="inicio">CONOCE MÁS</button>
                 </div>
             </div>
             <div class="subpanel" (mouseenter)="startPreview(expressVideo)">
                 <div class="video-container">
-                    <video #expressVideo muted loop playsinline preload=none>
+                    <video #expressVideo muted loop playsinline>
                         <source src="/videos/express.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="subpanel-texto">
-                    <img src="/principal/Express.png" alt="">
+                    <img  ngSrc="/principal/Express.png" alt=""  [width]="300" [height]="80">
                     <button routerLink="subservicio1">CONOCE MÁS</button>
                 </div>
             </div>
             <div class="subpanel" (mouseenter)="startPreview(industryVideo)">
                 <div class="video-container">
-                    <video #industryVideo muted loop playsinline preload=none>
+                    <video #industryVideo muted loop playsinline>
                         <source src="/videos/consultants.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="subpanel-texto">
-                    <img src="/principal/Consultants.png" alt="">
+                    <img ngSrc="/principal/Consultants.png" alt=""  [width]="300" [height]="80">
                     <button routerLink="inicio">CONOCE MÁS</button>
                 </div>
             </div>
