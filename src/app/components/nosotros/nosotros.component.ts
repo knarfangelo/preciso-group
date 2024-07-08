@@ -19,7 +19,7 @@ register();
           <swiper-slide>
             <img class="imagen-slide" [src]="item.img" alt="">
             <h2>{{item.title}}</h2>
-            <p>{{item.description}}</p>
+            <p class="parrafos">{{item.description}}</p>
         </swiper-slide> 
       }    
     </swiper-container>

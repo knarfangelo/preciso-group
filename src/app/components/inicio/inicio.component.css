@@ -139,7 +139,7 @@ header .titulo-2 {
     bottom: 0;
     width: 30%;
     height: auto;
-    padding: 50px;
+    padding: 100px;
 }
 @media (max-width: 800px) {
     ul {

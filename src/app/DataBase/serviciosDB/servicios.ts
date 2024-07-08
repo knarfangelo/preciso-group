@@ -107,7 +107,7 @@ export const servicios: IServicio[] = [
     {
         img: '/servicios/5.jpg',
         title: 'Servicio de mantenimiento de tableros eléctricos',
-        description: 'Realizamos el mantenimiento rutinario de los tableros eléctricos como la forma ideal de garantizar el buen funcionamiento de las instalaciones eléctricas. Estos dispositivos son fundamentales para el normal funcionamiento de los fluidos eléctricos en plantas industriales, residenciales, de viviendas y comerciales.',
+        description: 'Brindamos servicios integrales de mantenimiento para subestaciones eléctricas, garantizando su óptimo funcionamiento y seguridad.',
         subServicio: [
             {
                 img: "/servicios/3.jpg",

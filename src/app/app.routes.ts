@@ -10,6 +10,7 @@ import { Subservicios4Component } from './components/subservicios-4/subservicios
 import { Subservicios5Component } from './components/subservicios-5/subservicios-5.component';
 import { Subservicios6Component } from './components/subservicios-6/subservicios-6.component';
 import { Subservicios7Component } from './components/subservicios-7/subservicios-7.component';
+import { Subservicios8Component } from './components/subservicios-8/subservicios-8.component';
 export const routes: Routes = [
     {path:'nosotros/:id', component:NosotrosComponent},
     {path:'', component:PrincipalComponent},
@@ -22,4 +23,5 @@ export const routes: Routes = [
     {path:'subservicios5', component:Subservicios5Component}, 
     {path:'subservicios6', component:Subservicios6Component}, 
     {path:'subservicios7', component:Subservicios7Component}, 
+    {path:'subservicios8', component:Subservicios8Component}, 
 ];

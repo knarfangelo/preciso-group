@@ -58,10 +58,12 @@ button:active{
 }
 swiper-container{
     width: 100%;
-    height:80vh;
+    height:auto;
     padding-top: 20px;
 }
-
+.parrafos{
+    margin-bottom: 30px;
+}
 .swiper-button-prev{
     position: absolute;
     z-index: 10;

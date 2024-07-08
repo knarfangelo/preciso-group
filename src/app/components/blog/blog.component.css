@@ -63,7 +63,7 @@ button:hover{
     color: #18448F;
 }
 .titulo-blog{
-    height: 100px;
+    min-height: 100px;
 }
 .style-button{
     width: 100%;
