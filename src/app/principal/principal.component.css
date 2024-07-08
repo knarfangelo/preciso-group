@@ -1,9 +1,7 @@
 .container-principal {
     width: 100vw; /* Use vw for viewport width to fill the entire viewport */
     height: 100vh; /* Use vh for viewport height */
-    overflow: hidden; /* Hide any overflowing content */
-    font-family: Arial, Helvetica, sans-serif;
-    
+    overflow: hidden; /* Hide any overflowing content */    
   }
   
   .titulo {

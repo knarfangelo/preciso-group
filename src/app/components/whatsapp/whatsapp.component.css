@@ -1,0 +1,11 @@
+.container{
+    position: fixed;
+    background-image: url("/fondo-whatsapp.png");
+    border-radius: 50px;
+    z-index: 500;
+    width: 90px;
+    height: 90px;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
