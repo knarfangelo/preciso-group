@@ -1,0 +1,13 @@
+<div class="search-container"  (click)="onContainerClick($event)">
+    <input type="text" [formControl]="searchControl" placeholder="Buscar servicios" class="search-input" (blur)="onInputBlur($event)">
+    @if (filteredOptions.length > 0) {
+    <ul class="suggestions">
+    @for (option of filteredOptions; track $index) {
+      <li>
+        <a [href]='getRouterLink(option)'>{{ option.name }}</a>
+      </li>
+    }
+    </ul>
+    }
+
+  </div>

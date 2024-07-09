@@ -63,6 +63,7 @@ swiper-container{
 }
 .parrafos{
     margin-bottom: 30px;
+    text-align: justify;
 }
 .swiper-button-prev{
     position: absolute;

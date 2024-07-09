@@ -14,8 +14,9 @@ main{
     box-sizing: border-box;
 }
 header{
-    background-image: url("/servicios/3.jpg");
-    background-size: cover;
+    background-image: url("/principal/Industry.png");
+    background-size:  50%;
+    background-color: #0f2c4b;
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
@@ -64,7 +65,7 @@ p{
     text-shadow: 1px 1px 1px #a7a7a7;
 }
 .titulo-2{
-    text-align: center;
+    text-align: justify;
     margin: 50px;
 }
 .titulo-3{

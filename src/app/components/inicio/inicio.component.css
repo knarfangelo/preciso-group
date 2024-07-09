@@ -145,7 +145,7 @@ header .titulo-2 {
     ul {
         flex-direction: column;
     }
-    li {
+    li {    
         border: 0;
     }
     nav {
