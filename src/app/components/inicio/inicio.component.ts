@@ -15,13 +15,14 @@ import { Subservicios4Component } from '../subservicios-4/subservicios-4.compone
 import { Subservicios5Component } from '../subservicios-5/subservicios-5.component';
 import { Subservicios6Component } from '../subservicios-6/subservicios-6.component';
 import { WhatsappComponent } from "../whatsapp/whatsapp.component";
+import { BuscadorComponent } from "../buscador/buscador.component";
 
 @Component({
     selector: 'app-inicio',
     standalone: true,
     templateUrl: './inicio.component.html',
     styleUrl: './inicio.component.css',
-    imports: [ServiciosComponent, Servicios2Component, NosotrosComponent, FooterComponent, GaleriaComponent, BlogComponent, RouterLink, NavResponsiveComponent, Subservicios1Component, Subservicios3Component, Subservicios7Component, Subservicios2Component, Subservicios4Component, Subservicios5Component, Subservicios6Component, WhatsappComponent]
+    imports: [ServiciosComponent, Servicios2Component, NosotrosComponent, FooterComponent, GaleriaComponent, BlogComponent, RouterLink, NavResponsiveComponent, Subservicios1Component, Subservicios3Component, Subservicios7Component, Subservicios2Component, Subservicios4Component, Subservicios5Component, Subservicios6Component, WhatsappComponent, BuscadorComponent]
 })
 export class InicioComponent {
 
