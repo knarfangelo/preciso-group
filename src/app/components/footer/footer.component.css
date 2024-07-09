@@ -31,8 +31,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.column h1 {
-}
 
 .column .button-cotizacion {
     background-color: #022454;
@@ -65,8 +63,7 @@ summary{
     .border-column{
         border: 0;
     }
-    .lista-style{
-    }
+
     summary{
         padding: 10px 0;
         border-radius: 10px;

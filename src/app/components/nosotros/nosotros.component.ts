@@ -3,12 +3,13 @@ import { SwiperContainer, register } from 'swiper/element/bundle';
 import { INosotros } from '../../models/INosotros';
 import { nosotros } from '../../DataBase/nosotrosDB/nosotros';
 import { SwiperOptions } from 'swiper/types';
+import { RouterLink } from '@angular/router';
 register();
 @Component({
   selector: 'app-nosotros',
   standalone: true,
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
-  imports: [],
+  imports: [RouterLink],
   template: `
     <header>
       <main>
@@ -26,7 +27,7 @@ register();
      <button class="swiper-button-prev"> < </button>
       <button class="swiper-button-next"> > </button>
     <div class="caja-button">
-      <button>Saber más</button>
+      <button routerLink="../subnosotros">Saber más</button>
 
     </div>
 
@@ -61,7 +62,7 @@ export class NosotrosComponent {
           slidesPerView:3,
         }
       },
-      spaceBetween:100,
+      spaceBetween:50,
       effect:"slide",
       autoplay:true,
       loop:true,
