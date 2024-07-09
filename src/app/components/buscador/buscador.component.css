@@ -1,0 +1,41 @@
+input{
+    display: flex;
+    width:40vw;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    outline: none;
+}
+.suggestions {
+    position: absolute;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 1000;
+    width: 90%; /* Asegúrate de que la lista de sugerencias ocupe el 100% del contenedor padre */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+}
+a{
+    display: flex;
+    height: 40px;
+    color: #18437F;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #18437F;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    input {
+        width: 80vw;
+    }
+    .suggestions{
+        max-height: 100px;
+    }
+}

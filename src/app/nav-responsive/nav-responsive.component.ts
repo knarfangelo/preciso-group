@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { BuscadorComponent } from "../components/buscador/buscador.component";
 
 @Component({
-  selector: 'app-nav-responsive',
-  standalone: true,
-  imports: [],
-  templateUrl: './nav-responsive.component.html',
-  styleUrl: './nav-responsive.component.css'
+    selector: 'app-nav-responsive',
+    standalone: true,
+    templateUrl: './nav-responsive.component.html',
+    styleUrl: './nav-responsive.component.css',
+    imports: [BuscadorComponent]
 })
 export class NavResponsiveComponent {
   isOpen = false;

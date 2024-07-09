@@ -144,6 +144,7 @@ h2{
     align-items: center;
     background-color: #AFD0FE;
 }
+<<<<<<< HEAD
 .containersub-3 img{
     width: 30%;
     height:400px;
@@ -151,6 +152,14 @@ h2{
     border-radius: 20px;
     object-fit: cover;
     margin-left: 50px;
+=======
+.containersub-3 .img3{
+    width: 50%;
+    height:100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
+>>>>>>> a3069e614b2dacabd8fdf7020b95b88c3b3db9ef
 }
 .container-servicios{
     display: flex;    
@@ -168,10 +177,8 @@ h2{
 }
 .serviciosprincipales img{
     width: 50px;
-    height:auto;
+    height: 50px;
     margin: 10px;
-    object-fit: contain;
-    border-radius: 20px;
 }
 .container-4{
     display: flex;
