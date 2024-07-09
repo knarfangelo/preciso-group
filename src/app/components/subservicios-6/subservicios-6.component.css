@@ -1,19 +1,23 @@
-p, h2 {
+p,
+h2 {
     margin: 0;
     padding: 0;
 
 }
+
 img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
 }
-main{
+
+main {
     width: 100%;
     height: auto;
     box-sizing: border-box;
 }
-header{
+
+header {
     background-image: url("/servicios/6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +25,8 @@ header{
     height: 50vh;
     position: relative;
 }
-header h1{
+
+header h1 {
     position: absolute;
     margin: 0;
     bottom: 0;
@@ -35,133 +40,173 @@ header h1{
     color: white;
     text-shadow: 1px 1px 1px #000;
 }
-ol{
+
+ol {
     list-style: none;
-    margin: 0;
+    padding-left: 50px;
 }
-li{
-    margin-top: 20px;
+
+li {
+    padding-top: 20px;
     display: flex;
     align-items: center;
     font-size: 25px;
 }
-li img{
+
+li img {
     box-sizing: border-box;
-    width: 25px;
-    height: 25px;
-    margin: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
-.icon{
+
+.icon {
     object-fit: contain;
     width: 20px;
     height: 40px;
     padding-bottom: 5px;
 }
-p{
+
+p {
     padding: 0 50px;
     font-size: 20px;
-    color: #000;
+    color: #18437f;
     text-shadow: 1px 1px 1px #a7a7a7;
+    text-align: justify;
 }
-.titulo-2{
-    text-align: center;
-    margin: 50px;
-}
-.titulo-3{
+
+.titulo-2 {
     text-align: center;
     padding: 50px;
+}
+
+.titulo-3 {
+    text-align: center;
+    padding-top: 30px;
     background-color: #AFD0FE;
 }
-.titulo-4{
+
+.titulo-4 {
     text-align: center;
     padding: 50px;
 }
-.titulo-5{
+
+.titulo-5 {
     text-align: center;
-    padding: 50px;
+    padding-top: 30px;
     background-color: #fff;
 }
-.container-sub1{
+
+.container-sub1 {
     display: flex;
     background-color: #AFD0FE;
     height: auto;
     padding: 30px 0;
     align-items: center;
+    padding-right: 100px;
 }
-.imgsubservicio{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+
+.imgsubservicio {
+    width: 35%;
+    height: 550px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
-.subtitulo{
+.subtitulo {
     font-weight: bold;
     color: #18437f;
 }
-h2{
+
+h2 {
     color: #18437f;
 }
 
-.containersub-2{
+.containersub-2 {
     display: flex;
     background-color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding-right: 40px;
 }
 
-.container-2 img{
+.container-2 img {
     width: 250px;
     height: 250px;
     border-radius: 200px;
 }
-.container-2{
+
+.container-2 {
     flex: 1;
-}
-.container-2 li{
-    color: #18437f;
-    font-weight: bold;
-}
-.imgnum{
-    font-size: 70px;
+    padding-left: 30px;
+    padding-right: 40px;
 }
 
-.containersub-3{
+.container-2 li {
+    color: #18437f;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Arial;
+
+}
+
+.imgnum {
+    font-size: 70px;
+    text-align: center;
+    color: #18437f;
+}
+
+.containersub-3 {
     display: flex;
     padding: 30px 0;
     align-items: center;
     background-color: #AFD0FE;
+    padding-left: 70px;
 }
-.containersub-3 .img3{
-    width: 50%;
-    height:100%;
-    border-radius: 10px;
+
+.imgservi {
+    width: 30%;
+    height: 400px;
     box-sizing: border-box;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
+    padding-left: 0px;
 }
-.container-servicios{
+
+.container-servicios {
     display: flex;
-}
-.serviciosprincipales{
-    width: 50%;
-    box-sizing: border-box;
-}
-.serviciosprincipales li{
+    padding-right: 20px;
     color: #18437f;
 }
-.serviciosprincipales img{
+
+.serviciosprincipales {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 20px;
+
+}
+
+.serviciosprincipales li {
+    color: #18437f;
+}
+
+.serviciosprincipales img {
     width: 50px;
     height: 50px;
-    margin: 10px;
+    padding: 10px;
 }
-.container-4{
+
+.container-4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(223, 223, 223);
-    padding: 100px 0;
+    font-size: 18px;
+    text-align: justify;
+    padding-bottom: 30px;
 }
-.container-4 button{
+
+.container-4 button {
     background-color: #18437f;
     color: white;
     padding: 10px 20px;
@@ -171,37 +216,68 @@ h2{
     cursor: pointer;
     width: 300px;
 }
-.container-4 button:hover{
+
+.container-4 button:hover {
     background-color: #0f2c4b;
 }
+
 @media (max-width: 800px) {
-    .container-sub1{
+    .container-sub1 {
         flex-direction: column;
+        padding-right: 15%;
+        padding-left: 15%;
     }
-    .containersub-2{
+
+    .subtitulo img {
+        width: 20%;
+        height: auto;
+    }
+
+    .containersub-2 {
         flex-direction: column;
+        padding-right: 5%;
     }
-    .containersub-3{
+
+    .container-2 {
+        padding-bottom: 15%;
+    }
+
+    .containersub-3 {
         flex-direction: column;
+        padding-right: 10%;
     }
-    .container-3{
+
+    .container-3 {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .container-servicios {
         flex-direction: column;
         width: 100%;
     }
-    .container-servicios{
-        flex-direction: column;
+
+    .serviciosprincipales {
         width: 100%;
+
     }
-    .serviciosprincipales{
-        width: 100%;
+
+    .custom-icons p {
+        padding: 0 0%;
     }
-    .custom-icons p{
-        padding: 0 10%;
-    }
-    .custom-icons{
+
+    .custom-icons {
         padding: 0;
     }
-    .imgsubservicio{
-        margin: 20px 0;
+
+    .imgsubservicio {
+        margin: 0px 0;
+        height: auto;
+        width: 90%;
+    }
+
+    .imgservi {
+        height: auto;
+        width: 90%;
     }
 }
