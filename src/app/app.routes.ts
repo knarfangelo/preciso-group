@@ -15,7 +15,8 @@ import { SubnosotrosComponent } from './components/subnosotros/subnosotros.compo
 export const routes: Routes = [
     {path:'nosotros/:id', component:NosotrosComponent},
     {path:'servicios', component:ServiciosComponent},
-    {path: '', redirectTo: '/inicio', pathMatch: 'full' },
+    {path: '', redirectTo: '/principal', pathMatch: 'full' },
+    {path:'principal', component:PrincipalComponent},
     {path:'subservicios1', component:Subservicios1Component}, 
     {path:'subservicios2', component:Subservicios2Component}, 
     {path:'subservicios3', component:Subservicios3Component}, 
